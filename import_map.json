@@ -1,0 +1,7 @@
+{
+  "imports": {
+    "discordeno/": "https://deno.land/x/discordeno@18.0.1/",
+    "openai/": "https://deno.land/x/openai@v4.27.0/",
+    "dotenv/": "https://deno.land/x/dotenv@v3.2.2/"
+  }
+}
