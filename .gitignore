@@ -1,0 +1,21 @@
+# Deno cache and lock
+deno.lock
+deno_dir/
+
+# Environment files
+.env
+.env.*
+
+# Node modules (if ever used)
+node_modules/
+
+# macOS/Linux system files
+.DS_Store
+Thumbs.db
+
+# Lefthook and Git hooks artifacts
+.lefthook/
+.git/hooks/
+
+# Documents
+docs/GITHUB-SETUP.md

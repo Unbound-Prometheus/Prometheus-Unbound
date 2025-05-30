@@ -59,12 +59,42 @@ docs: update setup instructions for Deno runtime
 
 ---
 
+## Pre-commit Hooks & Automation
+
+- **Lefthook** is required for managing pre-commit checks.
+  - Automatically runs `deno lint` and `deno fmt --check` on staged `.ts` files prior to every commit.
+  - See `lefthook.yml` and the provided installation script for setup instructions.
+  - To install:  
+    1. Install Lefthook globally if not already (`brew install lefthook` or see [Lefthook docs](https://github.com/evilmartians/lefthook)).  
+    2. Run `lefthook install` in the repository root.
+  - All contributors must ensure pre-commit hooks are enabled and passing prior to any PR.
+
+---
+
+## Copilotus & Project AI Collaboration
+
+- The project uses a dedicated AI assistant named **Copilotus** for code review, documentation, and project guidance.
+- Copilotus follows a strict behavioral protocol for code edits, summaries, and advice; see `COPILOT-BEHAVIOR.md` for details.
+- Major project decisions and protocols are logged in `COPILOT-DECISIONS.md`.
+
+---
+
+## Directory Structure & .gitignore
+
+- Source code lives in `src/`, with commands in `src/commands/`.
+- The root contains configuration, documentation, and meta files.
+- `.gitignore` covers Deno cache, lock files, system files, environment files, and Lefthook artifacts.
+- If environment variables are used, a `.env.example` file must be provided and maintained.
+
+---
+
 ## Contributing
 
 1. Fork the repo or make a new branch.
 2. Write clear, conventional commit messages.
 3. Run all checks (`deno lint`, `deno fmt`, any tests).
-4. Open a Pull Request and request review.
+4. Ensure pre-commit hooks pass for all staged files.
+5. Open a Pull Request and request review.
 
 ---
 
@@ -75,4 +105,10 @@ docs: update setup instructions for Deno runtime
 
 ---
 
-_Expand this Handbook as our project grows!_
+## Documentation & Decision Logs
+
+- Key project conventions and decisions are tracked in `COPILOT-DECISIONS.md`.
+- Copilotus's operating guidelines are found in `COPILOT-BEHAVIOR.md`.
+- Contributors are encouraged to expand this handbook as the project grows!
+
+---
