@@ -23,6 +23,24 @@ Welcome! This project aims to create a Socratic AI chatbot for our private Disco
 
 ---
 
+## Branch Strategy & Workflow (Updated 2025-05-31)
+
+We use a two-branch model:
+
+- **main**: always stable, production-ready code.
+- **develop**: integration branch for new features and fixes.
+
+**All new work is merged into `develop` via Pull Requests (PRs) with required reviews.**  
+After testing and review, releases are promoted from `develop` to `main`.
+
+- Branch protection rules are enforced on both `main` and `develop`.
+- Only organization members may merge PRs.
+- Direct pushes to protected branches are blocked.
+
+For more, see [WORKFLOW.md](./docs/WORKFLOW.md) and [HANDBOOK.md](./docs/HANDBOOK.md).
+
+---
+
 ## Project Phases
 
 See [PHASES.md](./PHASES.md) for a high-level breakdown and actionable steps.
@@ -33,7 +51,7 @@ See [TECH-STACK.md](./TECH-STACK.md) for rationale and alternatives.
 
 ## Contribution Workflow
 
-See [WORKFLOW.md](./WORKFLOW.md) for our dev process, PR, and CI/CD info.
+See [WORKFLOW.md](./docs/WORKFLOW.md) for our dev process, PR, and CI/CD info.
 
 ---
 

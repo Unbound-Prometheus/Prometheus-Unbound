@@ -10,6 +10,23 @@ This file documents major decisions, conventions, and process advice from Copilo
 
 ---
 
+## 2025-05-31
+
+### Branching and Repository Protection Policy
+
+- Adopted a two-branch strategy: `main` (stable) and `develop` (integration).
+- All new features and fixes are integrated into `develop` before merging to `main`.
+- Branch protection rules are enforced on both `main` and `develop`:
+  - PRs required for all merges.
+  - At least one reviewer required.
+  - Required status checks (CI) must pass before merging.
+  - Only organization members can merge to protected branches.
+  - Direct pushes to protected branches are blocked.
+- Repository is now public, but only org members have merge rights.
+- These policies replace prior manual enforcement with GitHub’s branch protection UI.
+
+---
+
 ## 2025-05-30
 
 ### Copilotus Identity & Behavioral Protocol

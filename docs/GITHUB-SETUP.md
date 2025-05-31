@@ -15,6 +15,7 @@
   - .gitignore (Node.js)
   - LICENSE (MIT or similar)
 - Protect `main`/`develop` branches.
+- Restrict PRs to org members only.
 - Require PRs for all merges.
 - Set up CODEOWNERS for review rules.
 

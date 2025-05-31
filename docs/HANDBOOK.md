@@ -12,6 +12,36 @@ Prometheus Unbound is a Socratic Discord AI chat bot, built with Deno, Discorden
 
 ---
 
+## Branching Model & Protection (Updated 2025-05-31)
+
+We use a two-branch model for project development:
+
+- **main**: always stable, production-ready code.
+- **develop**: integration branch for all ongoing development and feature work.
+
+Feature branches are created from `develop` and merged back via Pull Requests (PRs).
+
+**Branch Protection Rules:**
+
+- Branch protection rules are enforced on both `main` and `develop`.
+- All merges must be performed via PRs.
+- PRs require at least one review and must pass all required CI checks.
+- Only organization members can merge to protected branches.
+- Direct pushes to protected branches are blocked.
+
+**Permissions:**
+
+- Only organization members can create and merge PRs to `develop` and `main`.
+- Admin permissions are required to manage branch protection rules.
+- Write permissions are required for code changes.
+
+**Repository Visibility:**
+
+- The repository is public for transparency and open source collaboration.
+- Only organization members have merge rights, ensuring code quality and security.
+
+---
+
 ## Commit Message Style
 
 We use the **conventional commits** format:
@@ -112,3 +142,5 @@ docs: update setup instructions for Deno runtime
 - Contributors are encouraged to expand this handbook as the project grows!
 
 ---
+
+For further details, see [WORKFLOW.md](./WORKFLOW.md) and [DECISIONS.md](./copilotus/DECISIONS.md).
