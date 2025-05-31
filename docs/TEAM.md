@@ -29,6 +29,7 @@ Below you’ll find a list of our members, their personas, and a short note abou
 In the spirit of creative collaboration, here are some of our favorite candidate names for the Socratic bot:
 
 ### Mythology & Philosophy-Inspired
+- **Epimetheus** (Prometheus' old brother)
 - **Socrabot** (Socrates + bot, classic and to the point)
 - **PrometAI** (Prometheus + AI, ties into your server name)
 - **Logos** (Greek for “reason” or “word,” central to rational debate)
