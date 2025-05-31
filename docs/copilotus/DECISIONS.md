@@ -10,28 +10,24 @@ This file documents major decisions, conventions, and process advice from Copilo
 
 ---
 
+## 2025-05-31
+
+### Branching and Repository Protection Policy
+
+- Adopted a two-branch strategy: `main` (stable) and `develop` (integration).
+- All new features and fixes are integrated into `develop` before merging to `main`.
+- Branch protection rules are enforced on both `main` and `develop`:
+  - PRs required for all merges.
+  - At least one reviewer required.
+  - Required status checks (CI) must pass before merging.
+  - Only organization members can merge to protected branches.
+  - Direct pushes to protected branches are blocked.
+- Repository is now public, but only org members have merge rights.
+- These policies replace prior manual enforcement with GitHub’s branch protection UI.
+
+---
+
 ## 2025-05-30
-
-### Documentation Hub Structure
-
-- Decided to centralize all key documentation in the `docs/` folder and clearly reference them from the README.md.
-- Established a priority order for documentation links in the README.md:
-  1. SETUP
-  2. TEAM
-  3. PHASES
-  4. HANDBOOK
-  5. TECH STACK
-  6. WORKFLOW
-  7. BEHAVIOR (in docs/copilotus/BEHAVIOR.md)
-  8. DECISIONS (in docs/copilotus/DECISIONS.md)
-- GITHUB-SETUP.md was intentionally omitted from the primary documentation list, as it is less relevant for most contributors.
-- HANDBOOK.md was elevated in importance, as it provides foundational guidance for project development.
-- README.md now serves as the central navigation hub for all documentation and onboarding.
-
-### Commit Message Conventions
-
-- Reinforced the use of Conventional Commits, especially for documentation updates. Recommended that commit messages be specific about the nature of changes (e.g., “centralize documentation links in README, log protocol decision in COPILOT-DECISIONS.md” instead of generic “edit README.md”).
-- Clarity and specificity in commit messages helps with onboarding and project traceability.
 
 ### Copilotus Identity & Behavioral Protocol
 
