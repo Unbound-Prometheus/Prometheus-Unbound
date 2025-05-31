@@ -1,6 +1,8 @@
-# Socrates Discord AI Bot
+# Prometheus Unbound: Socrates Discord AI Bot
 
 Welcome! This project aims to create a Socratic AI chatbot for our private Discord server, designed to foster thoughtful debate and challenge echo chambers.
+
+---
 
 ## Project Vision
 
@@ -9,6 +11,8 @@ Welcome! This project aims to create a Socratic AI chatbot for our private Disco
 - **Act as a “devil’s advocate” or “steelman” when needed.**
 - **Summarize and reflect on discussions.**
 - **Prioritize privacy, cost-effectiveness, and open source principles.**
+
+---
 
 ## Wishlist & Requirements
 
@@ -23,17 +27,20 @@ Welcome! This project aims to create a Socratic AI chatbot for our private Disco
 
 ---
 
-## Project Phases
+## Documentation
 
-See [PHASES.md](./PHASES.md) for a high-level breakdown and actionable steps.
+All key documentation is housed in the `docs/` folder and serves as a central hub for contributors:
 
-## Tech Stack
+1. [TEAM.md](./docs/TEAM.md) — Meet the core team members, their personas, and project roles.
+2. [PHASES.md](./docs/PHASES.md) — High-level project phases, roadmap, and major milestones.
+3. [SETUP.md](./docs/SETUP.md) — How to get your development environment running and start the project.
+4. [HANDBOOK.md](./docs/HANDBOOK.md) — Conventions, best practices, and contributor guidelines for developing Prometheus Unbound.
+5. [TECH-STACK.md](./docs/TECH-STACK.md) — Technology choices, rationale, and alternatives considered.
+6. [WORKFLOW.md](./docs/WORKFLOW.md) — Branching strategies, PR process, and CI/CD pipeline.
+7. [BEHAVIOR.md](./docs/copilotus/BEHAVIOR.md) — Copilotus’s behavioral protocol and communication guidelines.
+8. [DECISIONS.md](./docs/copilotus/DECISIONS.md) — Log of major project decisions and rationales.
 
-See [TECH-STACK.md](./TECH-STACK.md) for rationale and alternatives.
-
-## Contribution Workflow
-
-See [WORKFLOW.md](./WORKFLOW.md) for our dev process, PR, and CI/CD info.
+_If you have questions or need additional info, ask Copilotus in the Prometheus Unbound Copilot Space._
 
 ---
 
